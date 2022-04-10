@@ -7,13 +7,18 @@ class TestSolution(unittest.TestCase):
 
     def test_isPalindrome_1(self):
         s = "baab"
-        resutl = self.solution.isPalindrome(s)
-        self.assertEqual(resutl, True)
+        result = self.solution.isPalindrome(s)
+        self.assertEqual(result, True)
 
     def test_isPalindrome_2(self):
         s = "mama"
-        resutl = self.solution.isPalindrome(s)
-        self.assertEqual(resutl, False)
+        result = self.solution.isPalindrome(s)
+        self.assertEqual(result, False)
+
+    def test_isPalindrome_3(self):
+        s = "bb"
+        result = self.solution.isPalindrome(s)
+        self.assertEqual(result, True)
 
     def test_1(self):
         s = "babad"
@@ -24,6 +29,18 @@ class TestSolution(unittest.TestCase):
     def test_2(self):
         s = "cbbd"
         expect = "bb"
+        result = self.solution.longestPalindrome(s) 
+        self.assertEqual(result, expect)
+
+    def test_3(self):
+        s = "eabcb"
+        expect = "bcb"
+        result = self.solution.longestPalindrome(s) 
+        self.assertEqual(result, expect)
+
+    def test_4(self):
+        s = "baab"
+        expect = "baab"
         result = self.solution.longestPalindrome(s) 
         self.assertEqual(result, expect)
 
