@@ -31,6 +31,8 @@ class Solution:
     def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
         """
         From leetcode.
+        Time = O(n)
+        Space = O(1) if not count result array
         """
         
         # Mark existing value with negative number
