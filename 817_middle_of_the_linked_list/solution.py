@@ -7,6 +7,10 @@ class ListNode:
 
 class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        """
+        Time = O(n)
+        Spane = O(1)
+        """
         slow = fast = head
         
         while fast and fast.next:
