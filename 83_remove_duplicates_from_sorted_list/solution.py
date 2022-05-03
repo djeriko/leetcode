@@ -38,11 +38,8 @@ class Solution:
         Time: O(n)
         Space: O(1)
         """
-        if head == None:
-            return None
-        
         result = head
-        while result.next: 
+        while result and result.next: 
             if result.next.val == result.val:
                 result.next = result.next.next
             else:
