@@ -6,6 +6,10 @@ class ListNode:
         self.next = next
 
 class Solution:
+    """
+    Time: O(n)
+    Space: O(1)
+    """
     def reversedList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         prev = None
         curr = head
