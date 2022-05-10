@@ -25,6 +25,11 @@ class TestSolution(unittest.TestCase):
         result = self.solution.nextGreatestLetter(data, "j")
         self.assertEqual(result, "c")
 
+    def test_5(self):
+        data = ["c", "f", "j"]
+        result = self.solution.nextGreatestLetter(data, "f")
+        self.assertEqual(result, "j")
+
 if __name__ == "__main__":
     unittest.main()
         
