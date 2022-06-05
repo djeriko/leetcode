@@ -9,6 +9,12 @@ class TreeNode:
 
 
 class Solution:
+    # Breadth-First Search (BFS)
+    # Time complexity is O(V + E).
+    # Space complexity is O(V).
+    # V is number of vertices.
+    # E is number of edges.
+
     def minDepth(self, root: Optional[TreeNode]) -> int:
         if not root:
             return 0
