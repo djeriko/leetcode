@@ -1,6 +1,11 @@
 from typing import List
 
 class Solution:
+    """
+    Pattern - Two pointers
+    Time - O(n)
+    Space - O(n)
+    """
     def sortedSquares(self, nums: List[int]) -> List[int]:
         result = []
         left = 0
